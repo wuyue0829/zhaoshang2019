@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="48dp"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="项目名称:"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black1"/>
+
+                        <EditText
+                            android:id="@+id/ed_title1"
+                            android:layout_width="252dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toStartOf="@+id/icon_one"
+                            android:background="@null"
+                            android:gravity="right|center_vertical"
+                            android:maxLength="14"
+                            android:ellipsize="end"
+                            android:editable="false"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/icon_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_xiala"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:visibility="invisible"
+                            android:layout_marginRight="20dp"/>
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black2">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_leixing"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="项目类型:"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black1"/>
+
+
+                        <EditText
+                            android:id="@+id/ed_leixing"
+                            android:layout_width="252dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toStartOf="@+id/icon_one"
+                            android:background="@null"
+                            android:editable="false"
+                            android:gravity="right|center_vertical"
+                            android:maxLength="14"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/icon_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_xiala"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black2">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_chanye"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="项目产业:"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black1"/>
+
+                        <EditText
+                            android:id="@+id/ed_chanye"
+                            android:layout_width="252dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:editable="false"
+                            android:layout_toStartOf="@+id/icon_one"
+                            android:background="@null"
+                            android:gravity="right|center_vertical"
+                            android:maxLength="14"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/icon_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_xiala"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black2">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hangye"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="项目行业:"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black1"/>
+
+                        <EditText
+                            android:id="@+id/ed_hangye"
+                            android:layout_width="252dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toStartOf="@+id/icon_one"
+                            android:background="@null"
+                            android:editable="false"
+                            android:gravity="right|center_vertical"
+                            android:maxLength="14"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/icon_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_xiala"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black2">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="项目公司:"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black1"/>
+
+
+                        <ImageView
+                            android:id="@+id/icon_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_xiala"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:visibility="invisible"
+                            android:layout_marginRight="20dp"/>
+
+                        <EditText
+                            android:id="@+id/ed_fuwuduixiang"
+                            android:layout_width="243dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:editable="false"
+                            android:layout_toStartOf="@+id/icon_one"
+                            android:background="@null"
+                            android:gravity="right|center_vertical"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black2">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_fuzeren"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="招商项目负责人:"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black1"/>
+
+
+                        <EditText
+                            android:id="@+id/ed_fuzeren"
+                            android:layout_width="252dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toStartOf="@+id/icon_one"
+                            android:background="@null"
+                            android:editable="false"
+                            android:gravity="right|center_vertical"
+                            android:maxLength="14"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/icon_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_xiala"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black2">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_chenyuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="招商项目成员:    "
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black1"/>
+
+                        <EditText
+                            android:id="@+id/ed_title"
+                            android:layout_width="252dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toStartOf="@+id/icon_one"
+                            android:background="@null"
+                            android:gravity="right|center_vertical"
+                            android:maxLength="14"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/icon_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_xiala"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black2">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="启动时间:"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black1"/>
+
+                        <EditText
+                            android:id="@+id/ed_shijian"
+                            android:layout_width="252dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toStartOf="@+id/icon_one"
+                            android:background="@null"
+                            android:gravity="right|center_vertical"
+                            android:editable="false"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/icon_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_xiala"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black2">
+
+                    </View>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="备         注:"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/black1"/>
+
+
+                        <ImageView
+                            android:id="@+id/icon_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_xiala"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:visibility="invisible"
+                            android:layout_marginRight="20dp"/>
+
+                        <EditText
+                            android:id="@+id/ed_beizhu"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:minHeight="48dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toStartOf="@+id/icon_one"
+                            android:background="@null"
+                            android:editable="false"
+                            android:gravity="right|center_vertical"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <com.baoyachi.stepview.VerticalStepView
+                android:id="@+id/step_view"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ly_content"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_null"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="该阶段下没有节点"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="请选择项目结果"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardviewx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="3dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:focusableInTouchMode="true">
+
+
+                        <TextView
+                            android:id="@+id/tv_jieguo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/black"
+                            android:text="该项目已落地"
+                            android:visibility="gone"/>
+                        <RadioGroup
+                            android:id="@+id/radiogroup"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerVertical="true">
+
+                            <RadioButton
+                                android:id="@+id/radioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:text="落地" />
+
+                            <RadioButton
+                                android:id="@+id/radioButton2"
+                                android:layout_marginLeft="45dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="失败" />
+                        </RadioGroup>
+
+
+                    </RelativeLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview1"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_margin="14dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/ed_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:gravity="left"
+                            android:hint="请填写项目总结"
+                            android:textSize="12sp"
+                            android:background="@null"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dp"/>
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:id="@+id/ly_list"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="35dp"
+                android:background="@drawable/btn_send_bg"
+                android:visibility="gone"
+                android:text="查看更多总结" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+
+
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

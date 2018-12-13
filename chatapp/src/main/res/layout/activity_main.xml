@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pdkj.zhaoshang.view.MainView
+    android:id="@+id/main_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <LinearLayout
+            android:id="@+id/actionbar_layout_tmp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:background="@color/white">
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/actionbar_project_btn"
+                    style="@style/ActionBarItem"
+                    android:drawableTop="@drawable/actionbar_home_drawable_bg"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="1dp"
+                    android:text="首页" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/actionbar_msg_btn"
+                    style="@style/ActionBarItem"
+                    android:drawableTop="@drawable/actionbar_msg_drawable_bg"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="1dp"
+                    android:text="消息" />
+
+                <TextView
+                    android:id="@+id/all_unread_number"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/unread_msg_red"
+                    android:elevation="7dp"
+                    android:gravity="center"
+                    android:text="99+"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/actionbar_null_btn"
+                    style="@style/ActionBarItem"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="1dp"
+                    android:text="添加" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/actionbar_contact_btn"
+                    style="@style/ActionBarItem"
+                    android:drawableTop="@drawable/actionbar_contact_drawable_bg"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="1dp"
+                    android:text="我的" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/actionbar_me_btn"
+                    style="@style/ActionBarItem"
+                    android:drawableTop="@drawable/actionbar_me_drawable_bg"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="1dp"
+                    android:text="系统设置" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <pdkj.zhaoshang.view.ScrollControlViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/actionbar_layout_tmp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+        </pdkj.zhaoshang.view.ScrollControlViewPager>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/actionbar_layout_tmp"
+            android:background="@mipmap/comui_bar_top_shadow"/>
+
+        <ImageView
+            android:id="@+id/im_middle"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/icon_tjxm" />
+
+    </RelativeLayout>
+</pdkj.zhaoshang.view.MainView>
